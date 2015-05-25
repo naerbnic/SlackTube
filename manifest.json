@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "SlackTube",
+  "description": "This extension adds embedded youtube videos into Slack channels and posts, and makes it easy to select regions of video in youtube videos.",
+  "version": "0.0.1",
+
+  "content_scripts": [
+    {
+      "matches": ["https://*.slack.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
